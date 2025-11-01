@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RITIK TIWARI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bubble.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "DlIUUIGhaUMC0lHyB",
+      });
+   })();
+</script>
+</head>
+<body>
+    
+
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div id="particles-container" aria-hidden="true"></div>
+
+  <!-- Header / Nav -->
+  <header>
+    <nav class="glass p-3 rounded-xl">
+      <div class="brand neon">ER.RITIK</div>
+      <div class="nav-links">
+        <a href="#home">INIT</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONNECT</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-card glass rounded-2xl mx-auto">
+      <div class="holo"></div>
+      <div class="hero-grid">
+        <div style="padding:1rem 1rem 1rem 1rem; z-index:2;">
+          <div class="text-sm font-mono text-cyan-200 mb-3">SYSTEM → ONLINE</div>
+          <h1 style="font-family: 'Orbitron', monospace; font-size:3.2rem;" class="neon">Hi, I'm <span style="color:var(--mg)" class="neon-mag">ऋतिक तिवारी</span></h1>
+          <p class="muted mt-3">Frontend Developer · IT Student · Cybersecurity Enthusiast</p>
+          <p class="muted mt-4">Transforming ideas into interactive experiences — web apps, DSA solutions, and secure systems.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a class="btn-cyber" href="#projects">ACCESS PROJECTS</a>
+            <a class="btn-cyber" href="#contact">ESTABLISH LINK</a>
+            <!-- Resume download -->
+            <a class="btn-cyber" href="RITIK_TIWARI.pdf" download style="border-color:var(--mg); color:var(--mg);">DOWNLOAD RESUME</a>
+          </div>
+
+          <div class="mt-6 text-xs font-mono text-cyan-200">
+            <div>&gt; Location: Ghaziabad, India</div>
+            <div>&gt; Role: Frontend / Full-Stack & Cybersecurity</div>
+            <div>&gt; Response: &lt; 48 hours</div>
+          </div>
+        </div>
+
+        <!-- Hologram / Avatar column -->
+        <div class="avatar-box" style="display:flex;align-items:center;justify-content:center;">
+          <div class="card rounded-full glass" style="width:320px;height:320px;display:flex;align-items:center;justify-content:center;position:relative;">
+            <svg width="180" height="180" viewBox="0 0 24 24" fill="none" style="opacity:.95">
+              <circle cx="12" cy="12" r="10" stroke="rgba(0,240,255,0.12)" stroke-width="1.5">
+                <img class="imege" src="./image.png" alt="">
+              </circle>
+              <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.9 1 3 1.9 3 3V21C3 22.1 3.9 23 5 23H19C20.1 23 21 22.1 21 21V9Z" fill="url(#g)"></path>
+            </svg>
+            <div style="position:absolute;inset:8px;border-radius:50%;border:1px solid rgba(255,0,224,0.06)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="md:w-2/3">
+          <h2>USER.PROFILE</h2>
+          <p class="muted">I'm <strong>ऋतिक तिवारी</strong>, a B.Tech (3rd year, IT) student with a strong foundation in web development, DSA and cybersecurity. Founder of a counselling platform (running 2 years) and formerly a frontend intern at Saitech Systems — I build responsive websites, JavaScript apps and explore ethical hacking & penetration testing.</p>
+
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="card">
+              <div class="text-sm font-mono text-cyan-200 mb-2">Experience</div>
+              <div class="font-semibold neon">Frontend Dev Intern — Saiket Systems</div>
+              <div class="mt-2 muted">Built and optimized responsive UIs; improved performance & accessibility.</div>
+            </div>
+            <div class="card">
+              <div class="text-sm font-mono text-cyan-200 mb-2">Founder</div>
+              <div class="font-semibold neon">Counselling Platform</div>
+              <div class="mt-2 muted">Running since 2 years — operations, mentoring & user engagement.</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="md:w-1/3 space-y-4">
+          <div class="card">
+            <div class="text-sm font-mono text-cyan-200 mb-2">Contact</div>
+            <div class="font-semibold neon">drritik341@gmail.com</div>
+            <div class="muted mt-1">Ghaziabad, India</div>
+            <!-- phone hidden as requested -->
+          </div>
+
+          <div class="card">
+            <div class="text-sm font-mono text-cyan-200 mb-2">Education</div>
+            <div class="muted">B.Tech (IT) — ABES Engineering College (3rd Year)</div>
+            <div class="muted mt-1">12th — UP Board | 10th — UP Board</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="bg-black/20">
+    <div class="max-w-6xl mx-auto">
+      <h2>TECH.STACK</h2>
+      <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+        <div class="card text-center">
+          <div class="text-2xl neon">HTML</div><div class="muted mt-1">HTML5, Semantics</div>
+        </div>
+        <div class="card text-center">
+          <div class="text-2xl neon">CSS</div><div class="muted mt-1">Tailwind, Bootstrap, Responsive</div>
+        </div>
+        <div class="card text-center">
+          <div class="text-2xl neon">JS</div><div class="muted mt-1">Vanilla JS, DOM, ES6+</div>
+        </div>
+        <!--div class="card text-center">
+          <div class="text-2xl neon">React</div><div class="muted mt-1">Component-based UIs</div>
+        </div-->
+        <div class="card text-center">
+          <div class="text-2xl neon">DataBase</div><div class="muted mt-1">MySQL basics</div>
+        </div>
+        <div class="card text-center">
+          <div class="text-2xl neon">Cybersec</div><div class="muted mt-1">Ethical Hacking, Pen Testing, Tools</div>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="neon" style="font-size:1rem">Programming & Tools</h3>
+        <div class="flex flex-wrap gap-3 mt-3">
+          <span class="badge">C</span>
+          <span class="badge">Java</span>
+          <span class="badge">Python</span>
+          <span class="badge">DSA</span>
+          <span class="badge">Git & GitHub</span>
+          <span class="badge">VS Code</span>
+          <span class="badge">Linux</span>
+          <span class="badge">N8N</span>
+          <span class="badge">Figma</span>
+          <span class="badge">Canva</span>
+          <span class="badge">HTtrack</span>
+          <span class="badge">Zphisher</span>
+          <span class="badge">Seeker</span>
+          <span class="badge">Ngrok</span>
+          <span class="badge">social-engineer-toolkit</span>
+          <span class="badge">evilginx2</span>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="max-w-6xl mx-auto">
+      <h2>PROJECT.FILES</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <!-- Online Counselling -->
+        <!--article class="project-card card">
+          <div class="flex justify-between items-start">
+            <div>
+              <div class="text-xs font-mono text-cyan-200">PROJECT_001</div>
+              <h3 class="neon mt-1" style="font-size:1.1rem">Online Counselling Platform</h3>
+              <p class="muted mt-2">Responsive multi-page website connecting students & mentors. UX-focused, performance optimized.</p>
+              <div class="mt-3 flex gap-2">
+                <a class="btn-cyber" href="https://github.com/Arshiv341" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn-cyber" href="https://www.linkedin.com/in/ritik-tiwari-it/" target="_blank" rel="noopener" style="border-color:var(--mg); color:var(--mg)">LinkedIn</a>
+              </div>
+            </div>
+            <div class="text-xs muted">Status: Live</div>
+          </div>
+        </article-->
+
+        <!-- To-Do App -->
+        <article class="project-card card">
+          <div class="text-xs font-mono text-cyan-200">PROJECT_001</div>
+          <h3 class="neon mt-1">To-Do List App</h3>
+          <p class="muted mt-2">Vanilla JS task manager with localStorage, filters, and animations — great practice for state & UI.</p>
+          <div class="mt-3 flex gap-2">
+            <a class="btn-cyber" href="https://github.com/Arshiv341/SaiketInternship-/commit/0ab61254420f58730ab79744cf746ab9c8212890" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn-cyber" href="#" onclick="alert('Demo link not set')" style="opacity:.9">Live</a>
+          </div>
+        </article>
+
+        <!-- Quiz App -->
+        <article class="project-card card">
+          <div class="text-xs font-mono text-cyan-200">PROJECT_002</div>
+          <h3 class="neon mt-1">Quiz Application</h3>
+          <p class="muted mt-2">JS-based quiz with timer, scoring and question bank — used for practice & interviews prep.</p>
+          <div class="mt-3 flex gap-2">
+            <a class="btn-cyber" href="https://github.com/Arshiv341/SaiketInternship-/commit/3f86bbf9dae72e8969cde2b4a99c2199a1792486" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn-cyber" href="#" onclick="alert('Demo link not set')">Live</a>
+          </div>
+        </article>
+
+        <!-- Clone sites -->
+        <!--article class="project-card card">
+          <div class="text-xs font-mono text-cyan-200">PROJECT_004</div>
+          <h3 class="neon mt-1">Clone Websites (UI/UX Practice)</h3>
+          <p class="muted mt-2">Multiple clone projects (Netflix, Amazon UI) to master layouts, grids and responsive breakpoints.</p>
+          <div class="mt-3 flex gap-2">
+            <a class="btn-cyber" href="https://github.com/Arshiv341" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article-->
+
+        <!-- AI Assistant -->
+        <!--article class="project-card card">
+          <div class="text-xs font-mono text-cyan-200">PROJECT_005</div>
+          <h3 class="neon mt-1">Personal AI Assistant (Prototype)</h3>
+          <p class="muted mt-2">Voice/text triggers for automation tasks and info retrieval — experimental prototype.</p>
+          <div class="mt-3 flex gap-2">
+            <a class="btn-cyber" href="https://github.com/Arshiv341" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article-->
+
+        <!-- Add more -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-black/10">
+    <div class="max-w-4xl mx-auto">
+      <h2>COMM.LINK</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="card">
+          <h3 class="neon">Get in touch</h3>
+          <p class="muted mt-2">For internships, collaborations or hiring, drop a message — I reply within 48 hours.</p>
+          <div class="mt-4">
+            <div class="text-sm font-mono text-cyan-200">Email</div>
+            <div class="muted">drritik341@gmail.com</div>
+            <div class="text-sm font-mono text-cyan-200 mt-3">LinkedIn</div>
+            <a class="muted underline" href="https://www.linkedin.com/in/ritik-tiwari-it/" target="_blank" rel="noopener">linkedin.com/in/ritik-tiwari-it/</a>
+            <div class="text-sm font-mono text-cyan-200 mt-3">GitHub</div>
+            <a class="muted underline" href="https://github.com/Arshiv341" target="_blank" rel="noopener">github.com/Arshiv341</a>
+          </div>
+        </div>
+        <div class="card">
+  <h3 class="neon">Send a message</h3>
+
+  <form id="contact-form" onsubmit="handleContact(event)" class="mt-3 space-y-3">
+    <input required name="name" class="w-full cyber-input p-3 rounded" placeholder="Your name" />
+    <input required type="email" name="email" class="w-full cyber-input p-3 rounded" placeholder="Your email" />
+    <textarea required name="message" rows="4" class="w-full cyber-input p-3 rounded" placeholder="Message..."></textarea>
+    
+    <div class="flex gap-3">
+      <button class="btn-cyber" type="submit">TRANSMIT</button>
+      <a class="btn-cyber" href="RITIK_TIWARI.pdf" download style="border-color:var(--mg); color:var(--mg)">DOWNLOAD RESUME</a>
+    </div>
+
+    <div id="contact-msg" class="mt-2 text-sm muted" style="display:none"></div>
+  </form>
+ </div>
+
+  </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 text-center">
+  <div class="flex flex-col items-center space-y-3">
+
+    <!-- Neon Social Links -->
+    <div class="flex gap-8 justify-center items-center">
+      <!-- Gmail -->
+      <a href="mailto:drritik341@gmail.com" target="_blank" rel="noopener" 
+         class="transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_var(--mg)]">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+             stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-cyan-300">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 17.25V6.75m19.5 0L12 13.5 2.25 6.75m19.5 0H2.25" />
+        </svg>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/Arshiv341" target="_blank" rel="noopener" 
+         class="transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_var(--mg)]">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" 
+             class="w-7 h-7 text-cyan-300">
+          <path fill-rule="evenodd" 
+                d="M12 .5a11.5 11.5 0 00-3.64 22.42c.57.1.78-.25.78-.56v-2c-3.17.7-3.84-1.53-3.84-1.53a3.02 3.02 0 00-1.28-1.68c-1.05-.73.08-.72.08-.72a2.38 2.38 0 011.75 1.17 2.4 2.4 0 003.29.94 2.38 2.38 0 01.72-1.5c-2.53-.29-5.19-1.26-5.19-5.61a4.4 4.4 0 011.17-3.05 4.1 4.1 0 01.11-3.01s.96-.31 3.14 1.18a10.8 10.8 0 015.72 0c2.18-1.49 3.14-1.18 3.14-1.18a4.1 4.1 0 01.11 3.01 4.4 4.4 0 011.17 3.05c0 4.37-2.67 5.31-5.22 5.59a2.69 2.69 0 01.76 2.09v3.1c0 .31.21.67.79.56A11.5 11.5 0 0012 .5z" 
+                clip-rule="evenodd" />
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/ritik-tiwari-it/" target="_blank" rel="noopener" 
+         class="transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_var(--mg)]">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" 
+             class="w-7 h-7 text-cyan-300">
+          <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.84-2.2 3.8-2.2 4.06 0 4.8 2.67 4.8 6.1V24h-4v-7.5c0-1.8-.03-4.1-2.5-4.1s-2.88 1.95-2.88 4V24h-4V8z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="muted text-sm mt-4">
+      © 2025 ऋतिक तिवारी | Built with <span style="color:var(--mg)">♥</span> & Code
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+  
+
+</body>
+</html>

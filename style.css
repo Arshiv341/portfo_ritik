@@ -1,0 +1,87 @@
+:root{
+      --bg:#0a0a0a;
+      --cy:#00f0ff;
+      --mg:#ff00e0;
+      --muted:rgba(255,255,255,0.08);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background: radial-gradient(circle at 20% 20%, rgba(0,255,255,0.02), transparent 20%),
+                  linear-gradient(135deg,#06060a 0%, #0b0710 100%);
+      color:var(--cy);
+      font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      overflow-x:hidden;
+      user-select: none;
+    }
+
+    /* neon text + borders */
+    .neon { color:var(--cy); text-shadow:0 0 6px var(--cy),0 0 18px rgba(0,240,255,0.12); }
+    .neon-mag { color:var(--mg); text-shadow:0 0 6px var(--mg); }
+    .glass { background: rgba(255,255,255,0.02); border:1px solid rgba(0,240,255,0.08); backdrop-filter: blur(8px); }
+    .btn-cyber {
+      display:inline-flex; align-items:center; gap:.6rem;
+      padding:.6rem 1.1rem; border:1.5px solid var(--cy); color:var(--cy);
+      text-transform:uppercase; letter-spacing:.08em; border-radius:8px; font-weight:600;
+      background: linear-gradient(90deg, rgba(0,240,255,0.02), transparent);
+      transition: all .22s ease;
+    }
+    .btn-cyber:hover{
+      transform:translateY(-4px);
+      box-shadow:0 6px 30px rgba(0,240,255,0.08), inset 0 0 14px rgba(0,240,255,0.03);
+    }
+
+    /* background grid & scanlines */
+    .grid-overlay{
+      position:fixed; inset:0; z-index:-2;
+      background-image:
+        linear-gradient(rgba(0,240,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,0,224,0.01) 1px, transparent 1px);
+      background-size: 60px 60px, 60px 60px;
+      opacity:.9;
+      animation: gmove 24s linear infinite;
+      pointer-events:none;
+    }
+    @keyframes gmove{0%{transform:translate(0,0)}100%{transform:translate(60px,60px)}}
+
+    /* particles */
+    .particle{ position:absolute; width:2px; height:2px; background:var(--cy); border-radius:50%; opacity:.9; animation: floaty linear infinite; }
+    @keyframes floaty {0%{transform:translateY(20vh)}100%{transform:translateY(-30vh); opacity:0}}
+
+    /* header */
+    header { position:fixed; top:0; left:0; right:0; z-index:40; padding:1rem 2rem; }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:1rem; }
+    .brand { font-family: 'Orbitron', monospace; font-weight:900; font-size:1.25rem; letter-spacing:.08em; }
+    .nav-links a{ color:var(--cy); margin-left:1rem; text-transform:uppercase; font-size:.85rem; opacity:.95 }
+
+    /* hero */
+    .hero { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:5rem 1.25rem; text-align:center; position:relative; }
+    .hero-card { max-width:920px; padding:2.5rem; border-radius:16px; position:relative; overflow:hidden; }
+    .holo { position:absolute; inset:0; background:conic-gradient(from 0deg, rgba(0,240,255,0.02), rgba(255,0,224,0.02)); filter:blur(40px); opacity:.25; pointer-events:none; }
+    .imege{border-radius: 50%;}
+    
+    /* sections */
+    section { padding:6rem 1.25rem; }
+    h2 { font-family: 'Orbitron', monospace; font-weight:800; font-size:2.4rem; margin-bottom:1rem; color:var(--cy) }
+    .muted { color:rgba(255,255,255,0.55); font-size:0.98rem; line-height:1.6 }
+
+    /* cards */
+    .card { background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02)); border-radius:12px; padding:1.25rem; border:1px solid rgba(0,240,255,0.06); }
+    .project-card:hover{ box-shadow:0 20px 60px rgba(0,0,0,0.6); transform:translateY(-8px); transition:all .3s ease; border-color:var(--cy) }
+
+    /* badges */
+    .badge { padding:.35rem .6rem; border-radius:999px; font-size:.72rem; border:1px solid rgba(255,255,255,0.03); background: linear-gradient(90deg, rgba(0,240,255,0.03), rgba(255,0,224,0.02)); }
+
+    @media (min-width:768px){
+      .hero { padding:8rem 2rem; }
+      .hero-grid{ display:grid; grid-template-columns: 1fr 420px; gap:2rem; align-items:center; }
+    }
+    @media (max-width:767px){
+      .nav-links{ display:none }
+    }
+    @media (max-width: 768px) {
+  .avatar-box {
+    display: none !important;
+  }
+}
